@@ -20,8 +20,8 @@ ontimize:
             - OPTIONS
             - DELETE
    jdbc:
-      name-convention: upper
-      sqlhandler: hsqldb
+      name-convention: lower
+      sqlhandler: mariadb
       sql-condition-processor:
          uppper-string: true
          upper-like: true
@@ -62,9 +62,9 @@ server:
       mime-types: application/json, application/xml
 spring:
    datasource:
-      driver-class-name: org.hsqldb.jdbcDriver
-      jdbc-url: jdbc:hsqldb:hsql://localhost:9013/templateDB
-      username: SA
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mariadb://localhost:3306/tunel
+      username: root
       password:
       initial-size: 10
       test-on-borrow: true

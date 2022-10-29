@@ -23,7 +23,6 @@
 			<groupId>com.ontimize</groupId>
 			<artifactId>tunelApiRest-api</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>com.ontimize</groupId>
 			<artifactId>tunelApiRest-model</artifactId>
