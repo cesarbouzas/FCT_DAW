@@ -60,40 +60,18 @@
     
     
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-                		
-    
-    
-    
+
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-                		
-    
-    
-    
+
     <java.version>11</java.version>
                 		
-    
-    
-    
+    <database.url>jdbc:mysql://localhost:3306/tunel</database.url>
 
-                		
-    
-    
-    
-    <database.url>jdbc:mariadb://localhost:3306/tunel</database.url>
-                		
-    
-    
-    
-    <mariadb.version>2.3.4</mariadb.version>
-                		
-    
-    
-    
+
+
     <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
-                	
   
-  
-  
+ 
   </properties>
         	
   
@@ -230,11 +208,10 @@
       
       
       
- <dependency>
-      <groupId>org.mariadb.jdbc</groupId>
-      <artifactId>mariadb-java-client</artifactId>
-      <version>1.5.7</version>
-    </dependency>
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+</dependency>
 
                         		
     
