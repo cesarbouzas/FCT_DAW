@@ -1,4 +1,4 @@
-package com.ontimize.hr.model.core.dao;
+package com.ontimize.tunelApiRest.model.core.dao;
 
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Repository;
@@ -9,13 +9,13 @@ import com.ontimize.jee.server.dao.jdbc.OntimizeJdbcDaoSupport;
 @Repository("MaterialDao")
 @Lazy
 @ConfigurationFile(configurationFile = "dao/MaterialDao.xml", configurationFilePlaceholder = "dao/placeholders.properties")
-public class CandidateDao extends OntimizeJdbcDaoSupport {
+public class MaterialDao extends OntimizeJdbcDaoSupport {
 
- public static final String ATTR_ID = "ID";
- public static final String ATTR_NAME = "";
- public static final String ATTR_ = "NAME";
- public static final String ATTR_SURNAME = "SURNAME";
-
- 
+ public static final String TAG="mat_";	
+ public static final String ATTR_ID = TAG+"id";
+ public static final String ATTR_UNITS = TAG+"units";
+ public static final String ATTR_NAME = TAG+"name";
+ public static final String ATTR_PRICE = TAG+"price";
+ public static final String ATTR_DESCRIPTION=TAG+"description";
 
 }
