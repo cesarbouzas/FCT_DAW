@@ -21,7 +21,7 @@ ontimize:
             - DELETE
    jdbc:
       name-convention: lower
-      sqlhandler: postgresql
+      sqlhandler: mysql
       sql-condition-processor:
          uppper-string: true
          upper-like: true
@@ -62,10 +62,10 @@ server:
       mime-types: application/json, application/xml
 spring:
    datasource:
-      driver-class-name: org.postgresql.Driver
-      jdbc-url: jdbc:postgresql://ugguhsiaoitikj:a48480f5a2ce87c37f1f4066b7a80c28be7575c0178a62c4d81e4be7f0c5de84@ec2-52-212-228-71.eu-west-1.compute.amazonaws.com:5432/d4qtcf32dk09dp
-      username: ugguhsiaoitikj
-      password: a48480f5a2ce87c37f1f4066b7a80c28be7575c0178a62c4d81e4be7f0c5de84
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/public
+      username: root
+      password:
       initial-size: 10
       test-on-borrow: true
    main:
