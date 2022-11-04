@@ -63,7 +63,7 @@ server:
 spring:
    datasource:
       driver-class-name: org.postgresql.Driver
-      jdbc-url: jdbc:postgresql://ugguhsiaoitikj:a48480f5a2ce87c37f1f4066b7a80c28be7575c0178a62c4d81e4be7f0c5de84@ec2-52-212-228-71.eu-west-1.compute.amazonaws.com:5432/d4qtcf32dk09dp
+      jdbc-url: jdbc:postgresql://ec2-52-212-228-71.eu-west-1.compute.amazonaws.com:5432/d4qtcf32dk09dp
       username: ugguhsiaoitikj
       password: a48480f5a2ce87c37f1f4066b7a80c28be7575c0178a62c4d81e4be7f0c5de84
       initial-size: 10
