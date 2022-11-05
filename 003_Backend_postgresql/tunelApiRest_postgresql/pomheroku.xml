@@ -78,9 +78,9 @@
     
     
     
-    <database.url>jdbc:postgresql://ugguhsiaoitikj:a48480f5a2ce87c37f1f4066b7a80c28be7575c0178a62c4d81e4be7f0c5de84@ec2-52-212-228-71.eu-west-1.compute.amazonaws.com:5432/d4qtcf32dk09dp</database.url>
+   <database.url>postgres://ugguhsiaoitikj:a48480f5a2ce87c37f1f4066b7a80c28be7575c0178a62c4d81e4be7f0c5de84@ec2-52-212-228-71.eu-west-1.compute.amazonaws.com:5432/d4qtcf32dk09dp</database.url>
                 		
-    
+  <!--<database.url>jdbc:postgresql://45.84.210.174:65432/Backend_2022_G3</database.url> --> 
     
     
  	<postgresql.version>42.2.25</postgresql.version>
@@ -236,7 +236,7 @@
                 
                 <artifactId>postgresql</artifactId>
                 
-                <version>42.5.0</version>
+                <version>42.2.25</version>
             </dependency>
         
     
