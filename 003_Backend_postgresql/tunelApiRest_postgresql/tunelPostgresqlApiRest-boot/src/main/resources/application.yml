@@ -63,9 +63,9 @@ server:
 spring:
    datasource:
       driver-class-name: org.postgresql.Driver
-      jdbc-url: jdbc:postgresql://host.docker.internal:49153/
+      jdbc-url: jdbc:postgresql://localhost:5432/
       username: postgres
-      password: postgrespw
+      password: postgres
       initial-size: 10
       test-on-borrow: true
    main:

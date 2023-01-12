@@ -78,7 +78,7 @@
     
     
     
-   <database.url>jdbc:postgresql://host.docker.internal:49153/</database.url>
+   <database.url>jdbc:postgresql://localhost:5432/</database.url>
                 		
   <!--<database.url>jdbc:postgresql://45.84.210.174:65432/Backend_2022_G3</database.url> --> 
     
