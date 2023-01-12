@@ -3,13 +3,13 @@
  xmlns="http://www.ontimize.com/schema/jdbc"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://www.ontimize.com/schema/jdbc http://www.ontimize.com/schema/jdbc/ontimize-jdbc-dao.xsd"
- catalog="" schema="${mainschema}" table="materials"
+ catalog="" schema="${mainschema}" table="plants"
  datasource="mainDataSource" sqlhandler="dbSQLStatementHandler">
  <DeleteKeys>
-  <Column>mat_id</Column>
+  <Column>plant_id</Column>
  </DeleteKeys>
  <UpdateKeys>
-  <Column>mat_id</Column>
+  <Column>plant_id</Column>
  </UpdateKeys>
- <GeneratedKey>mat_id</GeneratedKey>
+ <GeneratedKey>plant_id</GeneratedKey>
 </JdbcEntitySetup>
