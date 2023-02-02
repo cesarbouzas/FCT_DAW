@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContactoService } from '../shared/services/contacto.service';
 
 @Component({
   selector: 'app-contactos',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactosComponent implements OnInit {
 
-  constructor() { }
+  contactos:any;
+
+  constructor(private contactoService:ContactoService) { }
 
   ngOnInit(): void {
+    this.getCategorias();
+  }
+
+  private getCategorias():void{
+    this.contactoService.getCategorias().subscribe(
+      (data)=>{this.contactos=Object.values(data)[2];
+      console.log(this.contactos);
+      }
+      );
   }
 
 }

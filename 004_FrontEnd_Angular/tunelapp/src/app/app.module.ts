@@ -5,22 +5,25 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { ContactosComponent } from './contactos/contactos.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ListadoComponent } from './contactos/listado/listado.component';
-import { ContactoComponent } from './contactos/listado/contacto/contacto.component';
+
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ContactoService } from './shared/services/contacto.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     ContactosComponent,
-    ListadoComponent,
-    ContactoComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+
+
   ],
-  providers: [],
+  providers: [HttpClient,ContactoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
