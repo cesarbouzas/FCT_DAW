@@ -9,19 +9,11 @@ import { ContactoService } from 'src/app/shared/services/contacto.service';
 export class ListadoComponent implements OnInit {
   public listadoContactos :any;
 
-  constructor(private contactoService:ContactoService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.recuperarContacto();
-  }
-  private recuperarContacto():void{
-    this.contactoService.recuperarContacto().subscribe(
-      (data)=>{this.listadoContactos=data
 
-  },
-  (error)=>{},
-  ()=>{}
-    );
-}
+  }
+
 
 }
